@@ -1,5 +1,5 @@
-let gulp = require('gulp');
-let sass = require('gulp-sass');
+var gulp = require('gulp');
+var sass = require('gulp-sass')(require('sass'));
 // let cssbeautify = require('gulp-cssbeautify');
 
 gulp.task('sass', () => {
@@ -14,8 +14,3 @@ gulp.task('watch', () => {
     gulp.watch('app/scss/**/*.scss', gulp. series('sass'));
 
 });
-
-
-gulp.task('hello', () => {
-    console.log('123');
-})
