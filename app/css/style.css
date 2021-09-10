@@ -1,3 +1,41 @@
-nav {
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue";
+  scroll-behavior: smooth;
+}
+
+#navig {
   background-color: #b9b9b9;
+  list-style-type: none;
+  display: flex;
+  justify-content: right;
+  height: 40px;
+  align-items: center;
+}
+#navig #logo-name {
+  padding-right: 500px;
+}
+#navig li {
+  width: 10%;
+  flex-wrap: wrap;
+}
+#navig li a {
+  padding: 15px;
+  transition: all 0.5s;
+}
+#navig li a:hover {
+  color: white;
+  background-color: blue;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#about-inner {
+  text-align: -webkit-center;
+  margin: 10px;
+  font-family: sans-serif;
+}
+#about-inner #face-photo {
+  padding: 20px;
 }
