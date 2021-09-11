@@ -1,4 +1,9 @@
 @import"zmienne"; 
+@mixin sekcja {
+   text-align: center;
+   padding: 10px;
+   margin: 10px;
+}
 
 *{
    margin: 0;
@@ -9,37 +14,57 @@
 
 $ulcolor:#b9b9b9;
 
-#navig {
-   background-color: $ulcolor;
-   list-style-type: none;
-   display: flex;
-   justify-content: right;
-   height: 40px;
-   align-items: center;
-      #logo-name {
-         padding-right: 500px;
-      }
-      li {
-         width: 10%;
-         flex-wrap: wrap;
-         a {
-            padding: 15px;
-            transition: all 0.5s;
-            &:hover {
-               color: white;
-               background-color: blue;
-               padding: 5px;
-               text-decoration: none;
-            }
+header{
+   
+   height: 100vh;
+
+   #navig {
+      background-color: $ulcolor;
+      list-style-type: none;
+      display: flex;
+      justify-content: right;
+      height: 40px;
+      align-items: center;
+         #logo-name {
+            padding-right: 500px;
          }
-       }
+         li {
+            width: 10%;
+            flex-wrap: wrap;
+            a {
+               padding: 15px;
+               transition: all 0.5s;
+               &:hover {
+                  color: white;
+                  background-color: blue;
+                  padding: 5px;
+                  text-decoration: none;
+               }
+            }
+          }
+      }
+   h1 {
+      font-size: 2.5rem;
+      width: 50%;
+      padding-top: 50vh;
+      height: 100%;
+      text-align-last: center;
    }
 
-#about-inner {
-   text-align: -webkit-center;
-   margin: 10px;
-   font-family: sans-serif;
-      #face-photo {
-         padding: 20px;
+}
+
+section {
+   @include sekcja;
+
+   #about-inner {
+      text-align: -webkit-center;
+      margin: 10px;
+      font-family: sans-serif;
+
+         #face-photo {
+            padding: 20px;
+         }
       }
-   }
+   
+
+}
