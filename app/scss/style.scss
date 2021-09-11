@@ -1,22 +1,32 @@
 @import"zmienne"; 
 @mixin sekcja {
    text-align: center;
+   background-color: cadetblue;
+   box-sizing: border-box;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+@mixin photo {
+   width: 35vh;
+   height: 40vh;
    padding: 10px;
-   margin: 10px;
 }
 
 *{
    margin: 0;
    padding: 0;
    font-family: 'Bebas Neue';
-   scroll-behavior: smooth
+   scroll-behavior: smooth;
+   position: relative;
 }
 
 $ulcolor:#b9b9b9;
 
 header{
    
-   height: 100vh;
+   height: 40em;
+   background-color: lightgrey;
 
    #navig {
       background-color: $ulcolor;
@@ -25,15 +35,19 @@ header{
       justify-content: right;
       height: 40px;
       align-items: center;
+
          #logo-name {
             padding-right: 500px;
          }
+
          li {
             width: 10%;
             flex-wrap: wrap;
+
             a {
                padding: 15px;
                transition: all 0.5s;
+
                &:hover {
                   color: white;
                   background-color: blue;
@@ -46,25 +60,65 @@ header{
    h1 {
       font-size: 2.5rem;
       width: 50%;
-      padding-top: 50vh;
       height: 100%;
       text-align-last: center;
+      padding-top: 5em;
    }
 
 }
 
 section {
    @include sekcja;
+   #about {
+      background-color: white;
 
-   #about-inner {
-      text-align: -webkit-center;
-      margin: 10px;
-      font-family: sans-serif;
+   #container-about-row {
+      justify-content: right;
 
-         #face-photo {
-            padding: 20px;
-         }
-      }
+      #about-inner {
+         text-align: -webkit-center;
+         margin: 10px;
+         font-family: sans-serif;
    
+            #face-photo {
+               padding: 20px;
+            }
+         }
+   }
 
+}
+
+#container-travelling-row {
+   width: 100%;
+   place-content: center;
+
+   p{
+      width: 100%;
+   }
+
+   img{
+      @include photo;
+   }
+}
+
+section {
+   
+   .sport {
+   
+   img {
+   @include photo;
+       }
+   }
+}
+
+footer {
+   text-align: center;
+
+   .icons {
+      padding:10px;
+      
+      a{
+         padding: 10px;
+      }
+   }
 }
