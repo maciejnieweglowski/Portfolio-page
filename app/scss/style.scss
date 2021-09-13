@@ -1,7 +1,7 @@
 @import"zmienne"; 
 @mixin sekcja {
    text-align: center;
-   background-color: cadetblue;
+   background-color: white;
    box-sizing: border-box;
    margin-top: 20px;
    margin-bottom: 20px;
@@ -32,12 +32,12 @@ header{
       background-color: $ulcolor;
       list-style-type: none;
       display: flex;
-      justify-content: right;
       height: 40px;
       align-items: center;
+      place-content: center;
 
          #logo-name {
-            padding-right: 500px;
+            padding-inline: 10em;
          }
 
          li {
@@ -67,6 +67,10 @@ header{
 
 }
 
+@media (max-width: 786px) {
+
+}
+
 section {
    @include sekcja;
    #about {
@@ -86,6 +90,7 @@ section {
          }
    }
 
+   }
 }
 
 #container-travelling-row {

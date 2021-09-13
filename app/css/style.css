@@ -14,12 +14,12 @@ header #navig {
   background-color: #b9b9b9;
   list-style-type: none;
   display: flex;
-  justify-content: right;
   height: 40px;
   align-items: center;
+  place-content: center;
 }
 header #navig #logo-name {
-  padding-right: 500px;
+  padding-inline: 10em;
 }
 header #navig li {
   width: 10%;
@@ -45,21 +45,23 @@ header h1 {
 
 section {
   text-align: center;
-  background-color: cadetblue;
+  background-color: white;
   box-sizing: border-box;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+section #about {
   background-color: white;
 }
-section #container-about-row {
+section #about #container-about-row {
   justify-content: right;
 }
-section #container-about-row #about-inner {
+section #about #container-about-row #about-inner {
   text-align: -webkit-center;
   margin: 10px;
   font-family: sans-serif;
 }
-section #container-about-row #about-inner #face-photo {
+section #about #container-about-row #about-inner #face-photo {
   padding: 20px;
 }
 
