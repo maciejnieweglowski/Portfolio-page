@@ -6,15 +6,20 @@
   position: relative;
 }
 
+body {
+  background-image: url(../../photos/background.png);
+  background-size: 100%;
+}
+
 header {
   height: 40em;
-  background-color: lightgrey;
+  background-image: url(../../photos/background1.jpg);
+  background-size: 100%;
 }
 header #navig {
-  background-color: #b9b9b9;
   list-style-type: none;
   display: flex;
-  height: 40px;
+  height: 60px;
   align-items: center;
   place-content: center;
 }
@@ -28,10 +33,11 @@ header #navig li {
 header #navig li a {
   padding: 15px;
   transition: all 0.5s;
+  color: black;
 }
 header #navig li a:hover {
   color: white;
-  background-color: blue;
+  background-color: black;
   padding: 5px;
   text-decoration: none;
 }
@@ -41,17 +47,25 @@ header h1 {
   height: 100%;
   text-align-last: center;
   padding-top: 5em;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-name: appear;
+}
+@keyframes appear {
+  from {
+    margin-right: 0%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 50%;
+  }
 }
 
 section {
   text-align: center;
-  background-color: white;
   box-sizing: border-box;
-  margin-top: 20px;
   margin-bottom: 20px;
-}
-section #about {
-  background-color: white;
 }
 section #about #container-about-row {
   justify-content: right;
