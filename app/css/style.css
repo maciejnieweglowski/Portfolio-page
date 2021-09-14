@@ -8,13 +8,10 @@
   font-size: 1.1rem;
 }
 
-body {
-  background-image: url(../../photos/background.png);
-  background-size: 100%;
-}
-
 header {
   height: 40em;
+  background-image: url(../../photos/office.jpg);
+  background-size: cover;
 }
 header #navig {
   list-style-type: none;
@@ -25,6 +22,7 @@ header #navig {
 }
 header #navig #logo-name {
   padding-inline: 10em;
+  color: white;
 }
 header #navig li {
   width: 10%;
@@ -33,11 +31,11 @@ header #navig li {
 header #navig li a {
   padding: 15px;
   transition: all 0.5s;
-  color: black;
+  color: white;
 }
 header #navig li a:hover {
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
   padding: 5px;
   text-decoration: none;
 }
@@ -50,6 +48,7 @@ header h1 {
   animation-duration: 0.5s;
   animation-timing-function: ease-out;
   animation-name: appear;
+  color: white;
 }
 @keyframes appear {
   from {
@@ -64,27 +63,38 @@ header h1 {
 
 section#About {
   text-align: center;
+  padding-block: 5em;
 }
 section#About #facephoto {
   padding: 2em;
 }
 section#Technology {
   text-align: center;
+  padding-bottom: 5em;
+}
+section#Technology li {
+  width: 18%;
+  display: inline-flex;
+  place-content: center;
+  padding-block: 10px;
 }
 
-sectionHobby #container-hobby-row {
+section#Hobby {
+  padding-bottom: 5em;
+}
+section#Hobby #container-hobby-row {
   width: 100%;
   place-content: center;
 }
-sectionHobby #container-hobby-row p {
+section#Hobby #container-hobby-row p {
   width: 100%;
 }
-sectionHobby #container-hobby-row img {
+section#Hobby #container-hobby-row img {
   width: 35vh;
   height: 40vh;
   padding: 10px;
 }
-sectionHobby .sport img {
+section#Hobby .sport img {
   width: 35vh;
   height: 40vh;
   padding: 10px;
@@ -92,6 +102,7 @@ sectionHobby .sport img {
 
 footer {
   text-align: center;
+  padding-bottom: 5em;
 }
 footer .icons {
   padding: 10px;

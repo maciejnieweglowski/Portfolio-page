@@ -16,14 +16,16 @@
    font-size: 1.1rem;
 }
 
-body {
-   background-image: url(../../photos/background.png);
-   background-size: 100%;
-}
+// body {
+//    background-image: url(../../photos/background.png);
+//    background-size: 100%;
+// }
 
 header{
    
    height: 40em;
+   background-image: url(../../photos/office.jpg);
+   background-size: cover;
 
    #navig {
       list-style-type: none;
@@ -34,6 +36,7 @@ header{
 
          #logo-name {
             padding-inline: 10em;
+            color: white;
          }
 
          li {
@@ -43,11 +46,11 @@ header{
             a {
                padding: 15px;
                transition: all 0.5s;
-               color: black;
+               color: white;
 
                &:hover {
-                  color: white;
-                  background-color: black;
+                  color: black;
+                  background-color: white;
                   padding: 5px;
                   text-decoration: none;
                }
@@ -64,6 +67,7 @@ header{
       animation-duration: 0.5s;
       animation-timing-function: ease-out;
       animation-name: appear;
+      color: white;
 
       @keyframes appear {
          from {
@@ -85,6 +89,7 @@ header{
 
 section#About {
    text-align: center;
+   padding-block: 5em;
 
    h2 {
 
@@ -101,10 +106,19 @@ section#About {
 
 section#Technology {
    text-align: center;
+   padding-bottom: 5em;
+
+   li{
+      width: 18%;
+      display: inline-flex;
+      place-content: center;
+      padding-block: 10px;
+   }
 }
 
 
-sectionHobby {
+section#Hobby {
+   padding-bottom: 5em;
 
    #container-hobby-row {
       width: 100%;
@@ -131,6 +145,7 @@ sectionHobby {
 
 footer {
    text-align: center;
+   padding-bottom: 5em;
 
    .icons {
       padding:10px;
