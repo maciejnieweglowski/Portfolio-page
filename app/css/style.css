@@ -16,27 +16,42 @@ header {
 header #navig {
   list-style-type: none;
   display: flex;
-  height: 60px;
+  height: 70px;
   align-items: center;
   place-content: center;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-name: nav-appear;
+}
+@keyframes nav-appear {
+  from {
+    margin-top: 0%;
+    height: 0;
+  }
+  to {
+    margin-top: 0%;
+    height: 70px;
+  }
 }
 header #navig #logo-name {
-  padding-inline: 10em;
+  width: 40%;
+  padding-inline: 5em;
   color: white;
 }
 header #navig li {
   width: 10%;
   flex-wrap: wrap;
+  text-align: center;
 }
 header #navig li a {
   padding: 15px;
-  transition: all 0.5s;
+  transition: all 1s;
   color: white;
 }
 header #navig li a:hover {
   color: black;
   background-color: white;
-  padding: 5px;
+  padding: 13px;
   text-decoration: none;
 }
 header h1 {
@@ -45,19 +60,19 @@ header h1 {
   height: 100%;
   text-align-last: center;
   padding-top: 5em;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out;
   animation-name: appear;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.2s;
   color: white;
 }
 @keyframes appear {
   from {
-    margin-right: 0%;
-    width: 100%;
+    margin-top: 0%;
+    height: 0;
   }
   to {
-    margin-left: 0%;
-    width: 50%;
+    margin-top: 0%;
+    height: 100%;
   }
 }
 
@@ -70,7 +85,9 @@ section#About #facephoto {
 }
 section#Technology {
   text-align: center;
-  padding-bottom: 5em;
+  padding-block: 5em;
+  background-image: url(../../photos/leather.jpg);
+  color: white;
 }
 section#Technology li {
   width: 18%;
@@ -80,7 +97,9 @@ section#Technology li {
 }
 
 section#Hobby {
-  padding-bottom: 5em;
+  padding-block: 5em;
+  place-content: center;
+  text-align: -webkit-center;
 }
 section#Hobby #container-hobby-row {
   width: 100%;
@@ -102,7 +121,8 @@ section#Hobby .sport img {
 
 footer {
   text-align: center;
-  padding-bottom: 5em;
+  padding-block: 5em;
+  background-color: grey;
 }
 footer .icons {
   padding: 10px;
