@@ -8,6 +8,11 @@
   font-size: 1.1rem;
 }
 
+body {
+  background-image: url(../../photos/pixelm.jpg);
+  background-size: 100%;
+}
+
 header {
   height: 40em;
   background-image: url(../../photos/office.jpg);
@@ -86,8 +91,11 @@ section#About #facephoto {
 section#Technology {
   text-align: center;
   padding-block: 5em;
-  background-image: url(../../photos/leather.jpg);
-  color: white;
+  color: black;
+  text-shadow: 1px 1px white;
+  background-color: whitesmoke;
+  margin: 15px;
+  border: solid;
 }
 section#Technology li {
   width: 18%;
@@ -122,11 +130,14 @@ section#Hobby .sport img {
 footer {
   text-align: center;
   padding-block: 5em;
-  background-color: grey;
+  color: black;
 }
 footer .icons {
   padding: 10px;
 }
 footer .icons a {
   padding: 10px;
+}
+footer .icons a:hover {
+  color: darkcyan;
 }

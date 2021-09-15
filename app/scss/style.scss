@@ -16,10 +16,10 @@
    font-size: 1.1rem;
 }
 
-// body {
-//    background-image: url(../../photos/background.png);
-//    background-size: 100%;
-// }
+ body {
+   background-image: url(../../photos/pixelm.jpg);
+   background-size: 100%;
+}
 
 header{
    
@@ -124,8 +124,11 @@ section#About {
 section#Technology {
    text-align: center;
    padding-block: 5em;
-   background-image: url(../../photos/leather.jpg);
-   color: white;
+   color: black;
+   text-shadow: 1px 1px white;
+   background-color: whitesmoke;
+   margin: 15px;
+   border: solid;
 
    li{
       width: 18%;
@@ -134,7 +137,6 @@ section#Technology {
       padding-block: 10px;
    }
 }
-
 
 section#Hobby {
    padding-block: 5em;
@@ -163,18 +165,20 @@ section#Hobby {
    }
 }
 
-
 footer {
    text-align: center;
    padding-block: 5em;
-   background-color: grey;
-
+   color: black;
    .icons {
       padding:10px;
       
       a{
          padding: 10px;
-      
+
+         &:hover {
+            color: darkcyan;
+
+         }
       }
    }
 }
