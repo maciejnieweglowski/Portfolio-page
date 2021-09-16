@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: url(../../photos/pixelm.jpg);
+  background-image: url(../../photos/pixelmin.jpg);
   background-size: 100%;
 }
 
@@ -84,11 +84,27 @@ header h1 {
 section#About {
   text-align: center;
   padding-block: 5em;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+  animation-name: nav-appear;
+}
+@keyframes nav-appear {
+  from {
+    margin-top: 0%;
+    height: 0;
+  }
+  to {
+    margin-top: 0%;
+    height: 70px;
+  }
 }
 section#About #facephoto {
   padding: 2em;
 }
-section#Technology {
+section#Technology .row {
+  place-content: center;
+}
+section#Technology .row #ctech {
   text-align: center;
   padding-block: 5em;
   color: black;
@@ -97,11 +113,20 @@ section#Technology {
   margin: 15px;
   border: solid;
 }
-section#Technology li {
+section#Technology .row #ctech li {
   width: 18%;
   display: inline-flex;
   place-content: center;
   padding-block: 10px;
+}
+section#Technology .row #cux {
+  text-align: center;
+  padding-block: 5em;
+  color: black;
+  text-shadow: 1px 1px white;
+  background-color: whitesmoke;
+  margin: 15px;
+  border: solid;
 }
 
 section#Hobby {

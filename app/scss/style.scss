@@ -17,7 +17,7 @@
 }
 
  body {
-   background-image: url(../../photos/pixelm.jpg);
+   background-image: url(../../photos/pixelmin.jpg);
    background-size: 100%;
 }
 
@@ -107,6 +107,21 @@ header{
 section#About {
    text-align: center;
    padding-block: 5em;
+   animation-duration: 1.2s;
+   animation-timing-function: ease-in-out;
+   animation-name: nav-appear;
+
+   @keyframes nav-appear {
+      from {
+         margin-top: 0%;
+         height: 0;
+      }
+          
+      to {
+         margin-top: 0%;
+         height: 70px;
+      }      
+   }
 
    h2 {
 
@@ -121,7 +136,7 @@ section#About {
    }
 }
 
-section#Technology {
+@mixin cont {
    text-align: center;
    padding-block: 5em;
    color: black;
@@ -129,12 +144,27 @@ section#Technology {
    background-color: whitesmoke;
    margin: 15px;
    border: solid;
+}
+section#Technology {
 
-   li{
-      width: 18%;
-      display: inline-flex;
+   .row {
       place-content: center;
-      padding-block: 10px;
+
+      #ctech{
+         @include cont;
+   
+         li{
+            width: 18%;
+            display: inline-flex;
+            place-content: center;
+            padding-block: 10px;
+         }
+      }
+   
+   
+      #cux {
+      @include cont;
+      }
    }
 }
 
