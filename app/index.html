@@ -15,14 +15,15 @@
     <header>
         <nav>
             <ul id="navig">
-                <div id="logo-name">Maciej Niewęgłowski</div>  
+                <li><a href="#"begin id="logo-name">MaciejNiewęgłowski</a></li>
+                <li><a href=""></a></li>  
                 <li><a href="#About">About</a></li>
-                <li><a href="#Technology">Technology</a></li>
+                <li><a href="#Programming">Programming</a></li>
                 <li><a href="#Hobby">Hobby</a></li>
                 <li><a href="#Contact">Contact</a></li>
             </ul>  
         </nav>
-        <h1>
+        <h1 class="begin">
             Portfolio <br>
             Front-End developer
         </h1>
@@ -38,11 +39,15 @@
             I am willing to develop my skills and expand them as much as possible. <br></p>
     </section>
 
-    <section id="Technology">
+    <section id="Programming">
+        <h2 id="program">
+            Programming:
+        </h2>
         <div class="container-tech">
             <div class="row">
-                <div class="col-5 col-sm-12 col-md-6 col-lg-4" id="ctech">
+                <div class="col-12 col-sm-12 col-md-11 col-lg-3" id="ctech">
                     <h2>
+                        <i class="fas fa-cogs"></i><br>
                         Technology
                     </h2>
                     <p>Technology I use:</p>
@@ -59,12 +64,22 @@
                         <li>REACTJS</li>
                     </ul>
                 </div>
-                <div class="col-5 col-sm-12 col-md-6 col-lg-4" id="cux">
+                <div class="col-12 col-sm-12 col-md-5 col-lg-3" id="cux">
                     <h2>
+                        <i class="fas fa-desktop"></i><br>
                         UX/UI
                     </h2>
                     <p>
                         I see a great importance in designing a page which is intuitive, accesible and carefully design. This os why i spend time designing page to which is accesible by every user. 
+                    </p>
+                </div>
+                <div class="col-12 col-sm-12 col-md-5 col-lg-3" id="crwd">
+                    <h2>
+                        <i class="fas fa-mobile-alt"></i><br>
+                        RWD
+                    </h2>
+                    <p>
+                        Web surfing nowadays is strongly connected with smartphones, tables and many other devices, so I put extra effort to construct resposive web pages, which can be adapted to all sizes of screens.
                     </p>
                 </div>
             </div>
@@ -73,29 +88,24 @@
 
     <section id="Hobby">
         <h2>
-            Travelling
+            Hobby
         </h2>
         <div class="container-fluid">
             <div class="row" id="container-hobby-row">
-                <p>Every travel, photos, bla bla. Some of my photos from my last trip to Rome are presented below: </p>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12" id="chobby">
+                <p>I'm a sports type person. Training gave me the possibility to learn about teamwork, responsibility or improving myself. Sport gave me also the possibility to travel to different places or countries, where I could lear about other cultures or traditions. Below I posted some of my sport photos where I trained american football and basketball and also some photos from my latest visit to Rome:</p>
                 <img src="../photos/photo1.jpg" alt="">
                 <img src="../photos/photo2.jpg" alt="">
                 <img src="../photos/photo3.jpg" alt="">
                 <img src="../photos/photo4.jpg" alt="">
                 <img src="../photos/photo5.jpg" alt="">
+                <img src="../photos/football1.jpg" alt="">
+                <img src="../Photos/football2.jpg" alt="">
+                <img src="../Photos/football3.jpg" alt="">
+                <img src="../Photos/basketball1.jpg" alt="">
+                </div>
             </div>
-
         </div>
-        <h2>
-            Sport
-        </h2>
-        <p id="paragraf"> I was always a type of a sportsman. But main sports I am interested in are basketball and football - american football. I had an opportunity to train both of those sports in Cracow and compete against teams from different parts of Poland. I even got the privilige to be the captain of team B in Krakow Football Kings. 
-        <ul class="sport">
-            <img src="../photos/football1.jpg" alt="">
-            <img src="../Photos/football2.jpg" alt="">
-            <img src="../Photos/football3.jpg" alt="">
-            <img src="../Photos/basketball1.jpg" alt="">
-        </ul>
     </section>
 
     <footer id="Contact">   
@@ -106,6 +116,7 @@
             <a href="mailto:m.nieweglowski@onet.pl"><i class="fas fa-3x fa-envelope"></i></a>
             <a href="tel:+503568803"><i class="fas fa-3x fa-mobile-alt"></i></a>
         </div>
+        <p class="copyright"> Copyright © 2021 All rights reserved.</p>
     </footer>
 
     <script src="../app/js/main.js"></script>

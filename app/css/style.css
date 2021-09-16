@@ -19,9 +19,15 @@ header {
   background-size: cover;
 }
 header #navig {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
   list-style-type: none;
   display: flex;
-  height: 70px;
+  height: 3em;
   align-items: center;
   place-content: center;
   animation-duration: 1.2s;
@@ -37,11 +43,6 @@ header #navig {
     margin-top: 0%;
     height: 70px;
   }
-}
-header #navig #logo-name {
-  width: 40%;
-  padding-inline: 5em;
-  color: white;
 }
 header #navig li {
   width: 10%;
@@ -59,12 +60,17 @@ header #navig li a:hover {
   padding: 13px;
   text-decoration: none;
 }
+header #navig li a #logo-name {
+  width: 40%;
+  padding-inline: 5em;
+  color: white;
+}
 header h1 {
   font-size: 2.5rem;
   width: 50%;
   height: 100%;
   text-align-last: center;
-  padding-top: 5em;
+  padding-top: 8em;
   animation-name: appear;
   animation-timing-function: ease-in-out;
   animation-duration: 1.2s;
@@ -83,7 +89,7 @@ header h1 {
 
 section#About {
   text-align: center;
-  padding-block: 5em;
+  padding-top: 5em;
   animation-duration: 1.2s;
   animation-timing-function: ease-in-out;
   animation-name: nav-appear;
@@ -101,68 +107,86 @@ section#About {
 section#About #facephoto {
   padding: 2em;
 }
-section#Technology .row {
+
+section#Programming #program {
+  width: 100%;
+  padding-top: 3em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+section#Programming .row {
   place-content: center;
 }
-section#Technology .row #ctech {
+section#Programming .row i {
+  padding: 15px;
+}
+section#Programming .row #ctech {
   text-align: center;
   padding-block: 5em;
   color: black;
   text-shadow: 1px 1px white;
   background-color: whitesmoke;
-  margin: 15px;
+  margin: 10px;
   border: solid;
 }
-section#Technology .row #ctech li {
+section#Programming .row #ctech li {
   width: 18%;
   display: inline-flex;
   place-content: center;
   padding-block: 10px;
 }
-section#Technology .row #cux {
+section#Programming .row #cux {
   text-align: center;
   padding-block: 5em;
   color: black;
   text-shadow: 1px 1px white;
   background-color: whitesmoke;
-  margin: 15px;
+  margin: 10px;
+  border: solid;
+}
+section#Programming .row #crwd {
+  text-align: center;
+  padding-block: 5em;
+  color: black;
+  text-shadow: 1px 1px white;
+  background-color: whitesmoke;
+  margin: 10px;
   border: solid;
 }
 
 section#Hobby {
-  padding-block: 5em;
+  padding: 5em;
   place-content: center;
   text-align: -webkit-center;
 }
-section#Hobby #container-hobby-row {
+section#Hobby #chobby p {
   width: 100%;
-  place-content: center;
+  padding: 2em;
 }
-section#Hobby #container-hobby-row p {
-  width: 100%;
-}
-section#Hobby #container-hobby-row img {
-  width: 35vh;
-  height: 40vh;
-  padding: 10px;
-}
-section#Hobby .sport img {
-  width: 35vh;
-  height: 40vh;
-  padding: 10px;
+section#Hobby #chobby img {
+  width: 40vh;
+  height: 53vh;
+  padding: 3px;
+  border: solid;
+  margin: 15px;
 }
 
 footer {
   text-align: center;
-  padding-block: 5em;
+  padding-top: 3em;
   color: black;
 }
 footer .icons {
   padding: 10px;
 }
 footer .icons a {
-  padding: 10px;
+  padding: 3em;
+  color: black;
 }
 footer .icons a:hover {
   color: darkcyan;
+}
+footer .copyright {
+  padding-top: 3em;
+  font-size: small;
 }

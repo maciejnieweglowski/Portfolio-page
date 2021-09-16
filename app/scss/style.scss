@@ -1,11 +1,5 @@
 @import"zmienne"; 
 
-@mixin photo {
-   width: 35vh;
-   height: 40vh;
-   padding: 10px;
-}
-
 *{
    margin: 0;
    padding: 0;
@@ -28,9 +22,15 @@ header{
    background-size: cover;
 
    #navig {
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: rgba($color: black, $alpha: 0.7);
+      z-index: 10;
       list-style-type: none;
       display: flex;
-      height: 70px;
+      height: 3em;
       align-items: center;
       place-content: center;
       animation-duration: 1.2s;
@@ -49,12 +49,6 @@ header{
          }      
       }
 
-         #logo-name {
-            width: 40%;
-            padding-inline: 5em;
-            color: white;
-         }
-
          li {
             width: 10%;
             flex-wrap: wrap;
@@ -71,6 +65,13 @@ header{
                   padding: 13px;
                   text-decoration: none;
                }
+            
+            #logo-name {
+               width: 40%;
+               padding-inline: 5em;
+               color: white;
+            }
+
             }
          }
       }
@@ -80,7 +81,7 @@ header{
       width: 50%;
       height: 100%;
       text-align-last: center;
-      padding-top: 5em;
+      padding-top: 8em;
       animation-name: appear;
       animation-timing-function: ease-in-out;
       animation-duration: 1.2s;
@@ -106,7 +107,7 @@ header{
 
 section#About {
    text-align: center;
-   padding-block: 5em;
+   padding-top: 5em;
    animation-duration: 1.2s;
    animation-timing-function: ease-in-out;
    animation-name: nav-appear;
@@ -123,16 +124,8 @@ section#About {
       }      
    }
 
-   h2 {
-
-   }
-
    #facephoto {
       padding: 2em;
-   }
-   
-   p {
-
    }
 }
 
@@ -142,13 +135,24 @@ section#About {
    color: black;
    text-shadow: 1px 1px white;
    background-color: whitesmoke;
-   margin: 15px;
+   margin: 10px;
    border: solid;
 }
-section#Technology {
+section#Programming {
+
+   #program {
+      width: 100%;
+      padding-top: 3em;
+      padding-bottom: 1em;
+      text-align: center;
+   }
 
    .row {
       place-content: center;
+
+      i {
+         padding: 15px;
+      }
 
       #ctech{
          @include cont;
@@ -165,50 +169,59 @@ section#Technology {
       #cux {
       @include cont;
       }
+
+      #crwd {
+         @include cont;
+         }
    }
 }
 
+
+@mixin photo {
+   width: 40vh;
+   height: 53vh;
+   padding: 3px;
+}
+
 section#Hobby {
-   padding-block: 5em;
+   padding: 5em;
    place-content: center;
    text-align: -webkit-center;
 
-   #container-hobby-row {
-      width: 100%;
-      place-content: center;
+   #chobby {
    
       p{
          width: 100%;
+         padding: 2em
       }
    
       img{
          @include photo;
-      }
-   }
-
-   .sport {
-   
-      img {
-      @include photo;
-
+         border: solid;
+         margin: 15px;
       }
    }
 }
 
 footer {
    text-align: center;
-   padding-block: 5em;
+   padding-top: 3em;
    color: black;
    .icons {
       padding:10px;
       
       a{
-         padding: 10px;
+         padding: 3em;
+         color: black;
 
          &:hover {
             color: darkcyan;
 
          }
       }
+   }
+   .copyright {
+      padding-top: 3em;
+      font-size: small;
    }
 }
