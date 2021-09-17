@@ -49,8 +49,14 @@ header{
          }      
       }
 
+         #logo-name {
+            width: 40%;
+            padding-inline: 5em;
+            color: white;
+            text-align: center;
+         }
          li {
-            width: 10%;
+            width: 12%;
             flex-wrap: wrap;
             text-align: center;
 
@@ -65,13 +71,6 @@ header{
                   padding: 13px;
                   text-decoration: none;
                }
-            
-            #logo-name {
-               width: 40%;
-               padding-inline: 5em;
-               color: white;
-            }
-
             }
          }
       }
@@ -99,11 +98,15 @@ header{
          }          
       }
    }
+
+   @media only screen and (max-width: 767px) {
+      #navig {
+         display: none;
+      }
+   }
 }
 
-@media (max-width: 786px) {
 
-}
 
 section#About {
    text-align: center;
