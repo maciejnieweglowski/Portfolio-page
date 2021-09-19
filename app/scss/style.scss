@@ -100,12 +100,20 @@ header{
    }
 
    @media only screen and (max-width: 767px) {
-      #navig {
-         display: none;
-      }
+      
+         padding: 0;
+         margin: 0;
+         height: 30em;
+
+         #navig {
+            display: none;
+         }
+         h1 {
+            padding-top: 3em;
+            width: 100%;
+         }
    }
 }
-
 
 
 section#About {
@@ -141,6 +149,7 @@ section#About {
    margin: 10px;
    border: solid;
 }
+
 section#Programming {
 
    #program {
