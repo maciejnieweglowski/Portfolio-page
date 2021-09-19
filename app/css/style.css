@@ -11,12 +11,14 @@
 body {
   background-image: url(../../photos/pixelmin.jpg);
   background-size: 100%;
+  padding: 15px;
 }
 
 header {
   height: 40em;
   background-image: url(../../photos/office.jpg);
   background-size: cover;
+  margin: -15px;
 }
 header #navig {
   overflow: hidden;
@@ -89,8 +91,6 @@ header h1 {
 }
 @media only screen and (max-width: 767px) {
   header {
-    padding: 0;
-    margin: 0;
     height: 30em;
   }
   header #navig {
@@ -131,6 +131,7 @@ section#Programming #program {
 }
 section#Programming .row {
   place-content: center;
+  padding-inline: 0px;
 }
 section#Programming .row i {
   padding: 15px;
@@ -170,7 +171,7 @@ section#Programming .row #crwd {
 }
 
 section#Hobby {
-  padding: 5em;
+  padding-block: 5em;
   place-content: center;
   text-align: -webkit-center;
 }
