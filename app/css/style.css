@@ -216,7 +216,7 @@ footer .icons a:hover {
 }
 @media only screen and (max-width: 767px) {
   footer .icons a {
-    padding: 6em;
+    padding: 1em;
   }
 }
 footer .copyright {
