@@ -97,7 +97,7 @@ header h1 {
     display: none;
   }
   header h1 {
-    padding-top: 3em;
+    padding-top: 5em;
     width: 90%;
     text-align: center;
   }
@@ -216,7 +216,7 @@ footer .icons a:hover {
 }
 @media only screen and (max-width: 767px) {
   footer .icons a {
-    padding: 7em;
+    padding: 6em;
   }
 }
 footer .copyright {
