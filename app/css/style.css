@@ -214,6 +214,11 @@ footer .icons a {
 footer .icons a:hover {
   color: darkcyan;
 }
+@media only screen and (max-width: 767px) {
+  footer .icons a {
+    padding: 7em;
+  }
+}
 footer .copyright {
   padding-top: 3em;
   font-size: small;

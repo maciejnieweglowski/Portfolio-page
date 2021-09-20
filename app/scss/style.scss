@@ -239,6 +239,12 @@ footer {
 
          }
       }
+   
+   @media only screen and (max-width: 767px) {
+         a {
+            padding: 7em;
+         }
+      }
    }
    
    .copyright {
